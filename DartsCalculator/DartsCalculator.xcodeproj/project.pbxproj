@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		8BEEDC4A258DE8F500DC4CF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEEDC49258DE8F500DC4CF6 /* AppDelegate.swift */; };
 		8BEEDC4C258DE8F500DC4CF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEEDC4B258DE8F500DC4CF6 /* SceneDelegate.swift */; };
-		8BEEDC4E258DE8F500DC4CF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEEDC4D258DE8F500DC4CF6 /* ViewController.swift */; };
-		8BEEDC51258DE8F500DC4CF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BEEDC4F258DE8F500DC4CF6 /* Main.storyboard */; };
 		8BEEDC53258DE8FA00DC4CF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BEEDC52258DE8FA00DC4CF6 /* Assets.xcassets */; };
 		8BEEDC56258DE8FA00DC4CF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BEEDC54258DE8FA00DC4CF6 /* LaunchScreen.storyboard */; };
 		8BEEDC61258DE8FA00DC4CF6 /* DartsCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEEDC60258DE8FA00DC4CF6 /* DartsCalculatorTests.swift */; };
 		8BEEDC6C258DE8FA00DC4CF6 /* DartsCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEEDC6B258DE8FA00DC4CF6 /* DartsCalculatorUITests.swift */; };
+		8BEEDC7F258DE9C800DC4CF6 /* CaluculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BEEDC7E258DE9C800DC4CF6 /* CaluculatorViewController.xib */; };
+		8BEEDC96258E3BDD00DC4CF6 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BEEDC95258E3BDD00DC4CF6 /* KeyboardView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,6 @@
 		8BEEDC46258DE8F500DC4CF6 /* DartsCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DartsCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEEDC49258DE8F500DC4CF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BEEDC4B258DE8F500DC4CF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8BEEDC4D258DE8F500DC4CF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8BEEDC50258DE8F500DC4CF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BEEDC52258DE8FA00DC4CF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BEEDC55258DE8FA00DC4CF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BEEDC57258DE8FA00DC4CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		8BEEDC67258DE8FA00DC4CF6 /* DartsCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DartsCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEEDC6B258DE8FA00DC4CF6 /* DartsCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DartsCalculatorUITests.swift; sourceTree = "<group>"; };
 		8BEEDC6D258DE8FA00DC4CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BEEDC7E258DE9C800DC4CF6 /* CaluculatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaluculatorViewController.xib; sourceTree = "<group>"; };
+		8BEEDC95258E3BDD00DC4CF6 /* KeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +101,11 @@
 			children = (
 				8BEEDC49258DE8F500DC4CF6 /* AppDelegate.swift */,
 				8BEEDC4B258DE8F500DC4CF6 /* SceneDelegate.swift */,
-				8BEEDC4D258DE8F500DC4CF6 /* ViewController.swift */,
-				8BEEDC4F258DE8F500DC4CF6 /* Main.storyboard */,
+				8BEEDC8E258E3B9F00DC4CF6 /* Entity */,
+				8BEEDC8D258E3B7B00DC4CF6 /* Protocols */,
+				8BEEDC7C258DE97F00DC4CF6 /* View */,
+				8BEEDC8B258E3A1500DC4CF6 /* UseCase */,
+				8BEEDC8C258E3A2500DC4CF6 /* Repository */,
 				8BEEDC52258DE8FA00DC4CF6 /* Assets.xcassets */,
 				8BEEDC54258DE8FA00DC4CF6 /* LaunchScreen.storyboard */,
 				8BEEDC57258DE8FA00DC4CF6 /* Info.plist */,
@@ -126,6 +129,67 @@
 				8BEEDC6D258DE8FA00DC4CF6 /* Info.plist */,
 			);
 			path = DartsCalculatorUITests;
+			sourceTree = "<group>";
+		};
+		8BEEDC7C258DE97F00DC4CF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8BEEDC83258E399E00DC4CF6 /* Custom */,
+				8BEEDC7D258DE99300DC4CF6 /* Caluculator */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8BEEDC7D258DE99300DC4CF6 /* Caluculator */ = {
+			isa = PBXGroup;
+			children = (
+				8BEEDC7E258DE9C800DC4CF6 /* CaluculatorViewController.xib */,
+			);
+			path = Caluculator;
+			sourceTree = "<group>";
+		};
+		8BEEDC83258E399E00DC4CF6 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				8BEEDC84258E39A800DC4CF6 /* Keyboard */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		8BEEDC84258E39A800DC4CF6 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8BEEDC95258E3BDD00DC4CF6 /* KeyboardView.xib */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		8BEEDC8B258E3A1500DC4CF6 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		8BEEDC8C258E3A2500DC4CF6 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		8BEEDC8D258E3B7B00DC4CF6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8BEEDC8E258E3B9F00DC4CF6 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +295,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BEEDC7F258DE9C800DC4CF6 /* CaluculatorViewController.xib in Resources */,
+				8BEEDC96258E3BDD00DC4CF6 /* KeyboardView.xib in Resources */,
 				8BEEDC56258DE8FA00DC4CF6 /* LaunchScreen.storyboard in Resources */,
 				8BEEDC53258DE8FA00DC4CF6 /* Assets.xcassets in Resources */,
-				8BEEDC51258DE8F500DC4CF6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +323,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BEEDC4E258DE8F500DC4CF6 /* ViewController.swift in Sources */,
 				8BEEDC4A258DE8F500DC4CF6 /* AppDelegate.swift in Sources */,
 				8BEEDC4C258DE8F500DC4CF6 /* SceneDelegate.swift in Sources */,
 			);
@@ -296,14 +360,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8BEEDC4F258DE8F500DC4CF6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8BEEDC50258DE8F500DC4CF6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8BEEDC54258DE8FA00DC4CF6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
