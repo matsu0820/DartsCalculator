@@ -8,7 +8,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardView" customModule="DartsCalculator" customModuleProvider="target">
+            <connections>
+                <outlet property="deleteButton" destination="nPy-nH-pVs" id="sP4-u2-FGi"/>
+                <outlet property="eightButton" destination="CpA-U1-ZcP" id="tbR-De-gFT"/>
+                <outlet property="fiveButton" destination="vfH-gA-6Ka" id="f32-Z9-Srg"/>
+                <outlet property="fourButton" destination="P3E-4A-qCt" id="PBf-TN-alP"/>
+                <outlet property="nineButton" destination="CTV-06-zyL" id="2ql-ZN-9rI"/>
+                <outlet property="oneButton" destination="ixq-lt-9DW" id="jKl-tj-F1G"/>
+                <outlet property="returnButton" destination="AHu-DA-811" id="GMx-15-Cq3"/>
+                <outlet property="sevenButton" destination="AlH-Nb-XY1" id="nDK-6g-Kpr"/>
+                <outlet property="sixButton" destination="F58-MP-Ozx" id="Zlp-4f-145"/>
+                <outlet property="threeButton" destination="gcd-JR-YT7" id="C9z-3s-5mA"/>
+                <outlet property="twoButton" destination="vos-VF-2ww" id="mBp-4K-X6B"/>
+                <outlet property="zeroButton" destination="INn-4l-HYe" id="Ied-IC-322"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="sOP-Ws-phP">
             <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
@@ -60,14 +75,14 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZQ-6c-NFx" userLabel="SeperatorView">
-                    <rect key="frame" x="0.0" y="62" width="896" height="1.5"/>
+                    <rect key="frame" x="0.0" y="62" width="896" height="2"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="1.5" id="wIg-EM-rIY"/>
+                        <constraint firstAttribute="height" constant="2" id="wIg-EM-rIY"/>
                     </constraints>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nEF-GT-z6T">
-                    <rect key="frame" x="0.0" y="63.5" width="896" height="350.5"/>
+                    <rect key="frame" x="0.0" y="64" width="896" height="350"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uqf-tf-GaV">
                             <rect key="frame" x="0.0" y="0.0" width="896" height="87.5"/>
@@ -96,24 +111,24 @@
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ac9-WI-8bX">
-                            <rect key="frame" x="0.0" y="87.5" width="896" height="88"/>
+                            <rect key="frame" x="0.0" y="87.5" width="896" height="87.5"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3E-4A-qCt">
-                                    <rect key="frame" x="0.0" y="0.0" width="298.5" height="88"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="298.5" height="87.5"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                     <state key="normal" title="4">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfH-gA-6Ka">
-                                    <rect key="frame" x="298.5" y="0.0" width="299" height="88"/>
+                                    <rect key="frame" x="298.5" y="0.0" width="299" height="87.5"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                     <state key="normal" title="5">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F58-MP-Ozx">
-                                    <rect key="frame" x="597.5" y="0.0" width="298.5" height="88"/>
+                                    <rect key="frame" x="597.5" y="0.0" width="298.5" height="87.5"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                     <state key="normal" title="6">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -122,7 +137,7 @@
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Rry-DN-lbh">
-                            <rect key="frame" x="0.0" y="175.5" width="896" height="87.5"/>
+                            <rect key="frame" x="0.0" y="175" width="896" height="87.5"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AlH-Nb-XY1">
                                     <rect key="frame" x="0.0" y="0.0" width="298.5" height="87.5"/>
@@ -148,12 +163,12 @@
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5hr-QT-MSu">
-                            <rect key="frame" x="0.0" y="263" width="896" height="87.5"/>
+                            <rect key="frame" x="0.0" y="262.5" width="896" height="87.5"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPy-nH-pVs">
                                     <rect key="frame" x="0.0" y="0.0" width="298.5" height="87.5"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                    <state key="normal" title="ばつ">
+                                    <state key="normal" title="✖︎">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
                                 </button>

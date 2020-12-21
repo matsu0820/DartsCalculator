@@ -13,8 +13,10 @@
 		8BEEDC56258DE8FA00DC4CF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BEEDC54258DE8FA00DC4CF6 /* LaunchScreen.storyboard */; };
 		8BEEDC61258DE8FA00DC4CF6 /* DartsCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEEDC60258DE8FA00DC4CF6 /* DartsCalculatorTests.swift */; };
 		8BEEDC6C258DE8FA00DC4CF6 /* DartsCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEEDC6B258DE8FA00DC4CF6 /* DartsCalculatorUITests.swift */; };
-		8BEEDC7F258DE9C800DC4CF6 /* CaluculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BEEDC7E258DE9C800DC4CF6 /* CaluculatorViewController.xib */; };
 		8BEEDC96258E3BDD00DC4CF6 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BEEDC95258E3BDD00DC4CF6 /* KeyboardView.xib */; };
+		8BEEDC9B258E41F300DC4CF6 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEEDC9A258E41F300DC4CF6 /* KeyboardView.swift */; };
+		8BEEDCA6258E476700DC4CF6 /* CaluculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEEDCA5258E476700DC4CF6 /* CaluculatorViewController.swift */; };
+		8BEEDCC62590D5FC00DC4CF6 /* CaluculatorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BEEDCC52590D5FC00DC4CF6 /* CaluculatorViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +49,10 @@
 		8BEEDC67258DE8FA00DC4CF6 /* DartsCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DartsCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEEDC6B258DE8FA00DC4CF6 /* DartsCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DartsCalculatorUITests.swift; sourceTree = "<group>"; };
 		8BEEDC6D258DE8FA00DC4CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BEEDC7E258DE9C800DC4CF6 /* CaluculatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaluculatorViewController.xib; sourceTree = "<group>"; };
 		8BEEDC95258E3BDD00DC4CF6 /* KeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
+		8BEEDC9A258E41F300DC4CF6 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		8BEEDCA5258E476700DC4CF6 /* CaluculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaluculatorViewController.swift; sourceTree = "<group>"; };
+		8BEEDCC52590D5FC00DC4CF6 /* CaluculatorViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CaluculatorViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +106,7 @@
 				8BEEDC49258DE8F500DC4CF6 /* AppDelegate.swift */,
 				8BEEDC4B258DE8F500DC4CF6 /* SceneDelegate.swift */,
 				8BEEDC8E258E3B9F00DC4CF6 /* Entity */,
-				8BEEDC8D258E3B7B00DC4CF6 /* Protocols */,
-				8BEEDC7C258DE97F00DC4CF6 /* View */,
-				8BEEDC8B258E3A1500DC4CF6 /* UseCase */,
-				8BEEDC8C258E3A2500DC4CF6 /* Repository */,
+				8BEEDC7C258DE97F00DC4CF6 /* Module */,
 				8BEEDC52258DE8FA00DC4CF6 /* Assets.xcassets */,
 				8BEEDC54258DE8FA00DC4CF6 /* LaunchScreen.storyboard */,
 				8BEEDC57258DE8FA00DC4CF6 /* Info.plist */,
@@ -131,58 +132,43 @@
 			path = DartsCalculatorUITests;
 			sourceTree = "<group>";
 		};
-		8BEEDC7C258DE97F00DC4CF6 /* View */ = {
+		8BEEDC7C258DE97F00DC4CF6 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				8BEEDC83258E399E00DC4CF6 /* Custom */,
+				8BEEDC83258E399E00DC4CF6 /* CustoView */,
+				8BEEDCAA258E480300DC4CF6 /* Login */,
 				8BEEDC7D258DE99300DC4CF6 /* Caluculator */,
 			);
-			path = View;
+			path = Module;
 			sourceTree = "<group>";
 		};
 		8BEEDC7D258DE99300DC4CF6 /* Caluculator */ = {
 			isa = PBXGroup;
 			children = (
-				8BEEDC7E258DE9C800DC4CF6 /* CaluculatorViewController.xib */,
+				8BEEDCCD2590D6C400DC4CF6 /* Protocols */,
+				8BEEDCCA2590D64D00DC4CF6 /* Framework_Driver */,
+				8BEEDCCB2590D68700DC4CF6 /* InterfaceAdapter */,
+				8BEEDCCC2590D69F00DC4CF6 /* UseCase */,
 			);
 			path = Caluculator;
 			sourceTree = "<group>";
 		};
-		8BEEDC83258E399E00DC4CF6 /* Custom */ = {
+		8BEEDC83258E399E00DC4CF6 /* CustoView */ = {
 			isa = PBXGroup;
 			children = (
+				8BEEDCDA2590E4B400DC4CF6 /* CustomCell */,
 				8BEEDC84258E39A800DC4CF6 /* Keyboard */,
 			);
-			path = Custom;
+			path = CustoView;
 			sourceTree = "<group>";
 		};
 		8BEEDC84258E39A800DC4CF6 /* Keyboard */ = {
 			isa = PBXGroup;
 			children = (
 				8BEEDC95258E3BDD00DC4CF6 /* KeyboardView.xib */,
+				8BEEDC9A258E41F300DC4CF6 /* KeyboardView.swift */,
 			);
 			path = Keyboard;
-			sourceTree = "<group>";
-		};
-		8BEEDC8B258E3A1500DC4CF6 /* UseCase */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UseCase;
-			sourceTree = "<group>";
-		};
-		8BEEDC8C258E3A2500DC4CF6 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Repository;
-			sourceTree = "<group>";
-		};
-		8BEEDC8D258E3B7B00DC4CF6 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		8BEEDC8E258E3B9F00DC4CF6 /* Entity */ = {
@@ -190,6 +176,50 @@
 			children = (
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		8BEEDCAA258E480300DC4CF6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8BEEDCCA2590D64D00DC4CF6 /* Framework_Driver */ = {
+			isa = PBXGroup;
+			children = (
+				8BEEDCC52590D5FC00DC4CF6 /* CaluculatorViewController.storyboard */,
+				8BEEDCA5258E476700DC4CF6 /* CaluculatorViewController.swift */,
+			);
+			path = Framework_Driver;
+			sourceTree = "<group>";
+		};
+		8BEEDCCB2590D68700DC4CF6 /* InterfaceAdapter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = InterfaceAdapter;
+			sourceTree = "<group>";
+		};
+		8BEEDCCC2590D69F00DC4CF6 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		8BEEDCCD2590D6C400DC4CF6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8BEEDCDA2590E4B400DC4CF6 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,10 +325,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BEEDC7F258DE9C800DC4CF6 /* CaluculatorViewController.xib in Resources */,
 				8BEEDC96258E3BDD00DC4CF6 /* KeyboardView.xib in Resources */,
 				8BEEDC56258DE8FA00DC4CF6 /* LaunchScreen.storyboard in Resources */,
 				8BEEDC53258DE8FA00DC4CF6 /* Assets.xcassets in Resources */,
+				8BEEDCC62590D5FC00DC4CF6 /* CaluculatorViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +353,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BEEDCA6258E476700DC4CF6 /* CaluculatorViewController.swift in Sources */,
 				8BEEDC4A258DE8F500DC4CF6 /* AppDelegate.swift in Sources */,
+				8BEEDC9B258E41F300DC4CF6 /* KeyboardView.swift in Sources */,
 				8BEEDC4C258DE8F500DC4CF6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
